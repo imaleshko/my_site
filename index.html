@@ -1,27 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <hea
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <title>Комфорт Бус</title>
-</head>
-<body>
-    <header style="background-color: green;">
-        <p><img src="images/image.webp" alt="logo" width="70" height="70"> Комфорт Бус</p>
+  </head>
+  <body>
+    <header style="background-color: green">
+      <p><img src="images/image.png" alt="logo" width="70" height="70" /> Комфорт Бус</p>
     </header>
-    <section style="background-color: red;">
-        <h1>Розклад руху автобусів<h1>
-            <div>
-            <h2>Понеділок</h2>
-            <p>Ужгород-Київ <button type="button">Купити квиток</button></p>
-            <p>Ужгород-Львів <button type="button">Купити квиток</button></p>
-            <p>Ужгород-Одеса <button type="button">Купити квиток</button></p>
-            </div>
-    </section>
-    <footer style="background-color: gray;">
-        <h2>Контакти:</h2>
-        <p>Номер телефону: +380683427613</p>
-        <p>Електронна адреса: <a href="mailto:comfortbus@gmail.com">comfortbus@gmail.com</a></p>
+
+    <div class="main">
+      <div class="side"></div>
+      <div class="center"> 
+        <div class="day">
+          <p>Понеділок</p>
+        </div>
+        <div> <!--Понеділок-->
+          <table>
+            <thead>
+              <tr>
+                <th>Назва маршруту</th>
+                <th>Час</th>
+                <th>Ціна</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ужгород-Київ</td>
+                <td>8.45</td>
+                <td>400 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+                </tr>
+              <tr>
+                <td>Ужгород-Львів</td>
+                <td>9.15</td>
+                <td>800 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+              </tr>
+              <tr>
+                <td>Ужгород-Одеса</td>
+                <td>10.30</td>
+                <td>750 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+              </tr>
+              <tr>
+                <td>Ужгород-Луцьк</td>
+                <td>11.15</td>
+                <td>500 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+              </tr>
+              <tr>
+                <td>Ужгород-Тернопіль</td>
+                <td>12.15</td>
+                <td>300 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+              </tr>
+              <tr>
+                <td>Ужгород-Черкаси</td>
+                <td>12.15</td>
+                <td>900 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+              </tr>
+              <tr>
+                <td>Ужгород-Чернігів</td>
+                <td>12.15</td>
+                <td>700 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="day">
+          <p>Вівторок</p>
+        </div>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Назва маршруту</th>
+                <th>Час</th>
+                <th>Ціна</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Ужгород-Київ</td>
+                <td>8.45</td>
+                <td>400 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+                </tr>
+              <tr>
+                <td>Ужгород-Львів</td>
+                <td>9.15</td>
+                <td>800 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+              </tr>
+              <tr>
+                <td>Ужгород-Одеса</td>
+                <td>10.30</td>
+                <td>750 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+              </tr>
+              <tr>
+                <td>Ужгород-Луцьк</td>
+                <td>11.15</td>
+                <td>500 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+              </tr>
+              <tr>
+                <td>Ужгород-Тернопіль</td>
+                <td>12.15</td>
+                <td>300 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+              </tr>
+              <tr>
+                <td>Ужгород-Черкаси</td>
+                <td>12.15</td>
+                <td>900 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+              </tr>
+              <tr>
+                <td>Ужгород-Чернігів</td>
+                <td>12.15</td>
+                <td>700 грн</td>
+                <td><button type="button" onclick="onClick()">Купити квиток</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="side"></div>
+    </div>
+
+
+    <footer style="background-color: gray">
+      <h2>Контакти:</h2>
+      <p>Номер телефону: +380683427613</p>
+      <p>Електронна адреса: <a href="mailto:comfortbus@gmail.com">comfortbus@gmail.com</a></p>
     </footer>
-</body>
+  </body>
 </html>
