@@ -22,10 +22,21 @@ header {
     color: white;
 }
 
-.links_header {
+.links_header, .login_links_header {
     color: white;
     margin: 0 10px;
     text-decoration: none;
+}
+
+.user_icon {
+    width: 30px;
+    vertical-align: middle;
+}
+
+@media (max-width: 610px) {
+    .login_links_header {
+        display: none;
+    }
 }
 
 .day p {
