@@ -37,6 +37,14 @@ header {
     .login_links_header {
         display: none;
     }
+
+    .table {
+        font-size: 10px;
+    }
+
+    .button {
+        font-size: 10px;
+    }
 }
 
 .day p {
